@@ -13,11 +13,16 @@
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="flag/build/css/intlTelInput.min.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
 
     <link rel="stylesheet" href="css/style.css" />
-    <title>trips</title>
+    <title>new booking</title>
   </head>
   <body>
     <!-- <div class="nav-layer"></div> -->
@@ -112,7 +117,7 @@
       <div class="container">
         <div class="parent-landing">
           <div class="down-land">
-            <h3 class="text-center">حجز رحلة</h3>
+            <h3 class="text-center">حجز رحلة / رحلات صيد</h3>
           </div>
           <div class="slider">
             <div class="owl-carousel owl-main owl-theme">
@@ -133,42 +138,61 @@
     <!--end landing-->
     <!--start content-->
 
-    <!--trips type section-->
-    <div class="trips section-pad">
+    <!--orders  section-->
+    <div class="orders section-pad">
       <div class="container">
         <div class="flex-groupme">
-          <h5 class="main-title color-main font600 mb-5">انواع الرحلات</h5>
+          <h5 class="main-title color-main font600 mb-5">جميع الحجوزات</h5>
         </div>
-        <div class="col-md-10 col-12 margin-auto">
-          <div class="row">
-            <div class="col-md-6 col-12 mb-4">
-              <a href="#" class="trip-box rela-p">
-                <img src="imgs/Group 82427.png" alt="" />
-                <div class="abs-text">رحلات صيد</div>
-              </a>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12 mb-3">
+            <div class="order-box">
+              <div class="order-time">منذ ساعة</div>
+              <div class="img-order-cont mb-2">
+                <img src="imgs/Group 70332.png" alt="" />
+              </div>
+              <div class="order-num">رقم الطلب :<span>#9087</span></div>
+              <div class="order-name mt-2">
+                الغرض المنقول :<span>اسم الغرض</span>
+              </div>
+              <div class="order-case mt-2 mb-2">
+                <div class="or-flex">
+                  <i class="fa-solid fa-drum-steelpan"></i>
+                  <div class="or-text">الحالة:</div>
+                </div>
+                <span class="color-main">قيد التنفيذ</span>
+              </div>
+              <a href="waiting-deatials.html" class="main-btn up mt-4 mb-3"
+                >تفاصيل الطلب</a
+              >
             </div>
-            <div class="col-md-6 col-12 mb-4">
-              <a href="#" class="trip-box rela-p">
-                <img src="imgs/Group 82427.png" alt="" />
-                <div class="abs-text">زوارق سريعة</div>
-              </a>
-            </div>
-            <div class="col-md-6 col-12 mb-4">
-              <a href="#" class="trip-box rela-p">
-                <img src="imgs/Group 82427.png" alt="" />
-                <div class="abs-text">زلاجات</div>
-              </a>
-            </div>
-            <div class="col-md-6 col-12 mb-4">
-              <a href="#" class="trip-box rela-p">
-                <img src="imgs/Group 82427.png" alt="" />
-                <div class="abs-text">يخوت</div>
-              </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mb-3">
+            <div class="order-box">
+              <div class="order-time">منذ ساعة</div>
+              <div class="img-order-cont mb-2">
+                <img src="imgs/Group 70332.png" alt="" />
+              </div>
+              <div class="order-num">رقم الطلب :<span>#9087</span></div>
+              <div class="order-name mt-2">
+                الغرض المنقول :<span>اسم الغرض</span>
+              </div>
+              <div class="order-case mt-2 mb-2">
+                <div class="or-flex">
+                  <i class="fa-solid fa-drum-steelpan"></i>
+                  <div class="or-text">الحالة:</div>
+                </div>
+                <span class="color-main">قيد التنفيذ</span>
+              </div>
+              <a href="waiting-deatials.html" class="main-btn up mt-4 mb-3"
+                >تفاصيل الطلب</a
+              >
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="app section-pad">
       <div class="container">
         <div class="flex-groupme">
@@ -321,6 +345,7 @@
     <script src="js/wow.min.js"></script>
     <script src="flag/build/js/intlTelInput.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="js/jquery.fancybox.min.js"></script>
 
     <script src="js/main.js"></script>
