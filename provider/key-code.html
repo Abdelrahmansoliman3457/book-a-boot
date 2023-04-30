@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="flag/build/css/intlTelInput.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>login</title>
+  </head>
+  <body>
+    <!-- <div class="nav-layer"></div> -->
+    <!--start loader-->
+    <div class="loader">
+      <img class="wow bounceIn" src="imgs/Group 70332.png" alt="" />
+    </div>
+    <!--End loader-->
+    <div class="img-background">
+      <img src="imgs/Rectangle 30488.png" alt="" />
+    </div>
+    <div class="login">
+      <div class="container">
+        <div class="col-md-6 col-12 margin-auto p-0">
+          <form action="">
+            <div class="login-box mt-3">
+              <div class="login-img text-center mt-2">
+                <img src="imgs/code.png" alt="" />
+              </div>
+              <div class="title-login text-center mt-3">كود التفعيل</div>
+              <div class="under-title mb-3 text-center mt-2">
+                برجاء ادخال كود التفعيل المرسل إليك عبر الجوال
+              </div>
+              <div class="row">
+                <div class="col-md-9 col-12 margin-auto">
+                  <div class="code-container">
+                    <input
+                      type="number"
+                      class="code"
+                      min="0"
+                      max="9"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="code"
+                      min="0"
+                      max="9"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="code"
+                      min="0"
+                      max="9"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="code"
+                      min="0"
+                      max="9"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="code"
+                      min="0"
+                      max="9"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="code"
+                      min="0"
+                      max="9"
+                      required
+                    />
+                  </div>
+
+                  <div class="dont-have">
+                    لم تستلم الكود بعد ؟
+                    <button type="button" class="resent-btn">
+                      أعد إرسال الكود
+                    </button>
+                  </div>
+                  <div class="mt-4">
+                    <button class="main-btn up mb-2" id="formsub">تاكيد</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/alerts.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!--get key code-->
+    <script>
+      $(document).ready(function () {
+        let codes = document.querySelectorAll(".code");
+
+        $(".code-container .code").first().focus();
+
+        codes.forEach((code, idx) => {
+          code.addEventListener("keydown", (e) => {
+            if (e.key >= 0 && e.key <= 9) {
+              codes[idx].value = "";
+              if ([idx + 1] < codes.length) {
+                setTimeout(() => codes[idx + 1].focus(), 10);
+              }
+            } else if (e.key === "Backspace") {
+              setTimeout(() => codes[idx - 1].focus(), 10);
+            }
+          });
+        });
+      });
+    </script>
+    <!--call sweet alert after login -->
+    <script>
+      console.log(document.getElementById("formsub"));
+      document.getElementById("formsub").onclick = function (event) {
+        event.preventDefault();
+        // $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+        Swal.fire({
+          imageUrl: "imgs/91068-message-sent-successfully-plane.gif",
+          title: "تهانينا تم تسجيل الحساب بنجاح!",
+          text:
+            'جاري تحويلك الى الصفحة الرئيسية',
+
+          showConfirmButton: false,
+          timer: 2000,
+        });
+      };
+    </script>
+  </body>
+</html>

@@ -50,13 +50,13 @@ if(drop){
 let header = document.querySelector(".header");
 
 if(header){
-    window.onscroll = function () {
-      if (window.pageYOffset > 30) {
-        header.classList.add("bg-header");
-      } else {
-        header.classList.remove("bg-header");
-      }
-    };
+  window.onscroll = function () {
+    if (window.pageYOffset > 30) {
+      header.classList.add("bg-header");
+    } else {
+      header.classList.remove("bg-header");
+    }
+  };
 
 }
 

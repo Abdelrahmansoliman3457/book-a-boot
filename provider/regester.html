@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="flag/build/css/intlTelInput.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>regester</title>
+  </head>
+  <body>
+    <!-- <div class="nav-layer"></div> -->
+    <!--start loader-->
+    <div class="loader">
+      <img class="wow bounceIn" src="imgs/Group 70332.png" alt="" />
+    </div>
+    <!--End loader-->
+    <div class="img-background">
+      <img src="imgs/Rectangle 30488.png" alt="" />
+    </div>
+    <div class="login">
+      <div class="container">
+        <div class="col-md-6 col-12 margin-auto p-0">
+          <form action="">
+            <div class="login-box mt-3">
+              <div class="login-img text-center mt-2">
+                <img src="imgs/Group 70332.png" alt="" />
+              </div>
+              <div class="title-login text-center mt-3">حساب جديد</div>
+              <div class="under-title mb-3 text-center mt-2">
+                الرجاء ادخال بيانات حسابك لتتمكن من تسجيل حساب جديد
+              </div>
+
+              <div class="img-regester-cont mb-3 mt-3">
+                <label for="img-up" class="img-edit">
+                  <input
+                    onchange="loadFiles(event)"
+                    type="file"
+                    id="img-up"
+                    hidden
+                    accept="image/*"
+                  />
+                  <i class="fa-regular fa-pen-to-square"></i>
+                </label>
+                <img
+                  id="change-profile"
+                  src="imgs/185644495_1667380803456791_1968050560740665054_n.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="row">
+                <div class="col-md-9 col-12 margin-auto">
+                  <div class="mb-3 main-inp-cont">
+                    <h6 class="fontBold mainColor font14 font600">
+                      اسم المستخدم
+                    </h6>
+                    <div class="relative-co">
+                      <input
+                        type="text"
+                        placeholder="الرجاء ادخال اسم المستخدم"
+                        class="inp-spe-tele"
+                      />
+                      <div class="icon-float">
+                        <i class="fa-solid fa-user"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3 main-inp-cont">
+                    <h6 class="fontBold mainColor font14 font600">
+                      رقم الجوال
+                    </h6>
+                    <div class="relative-co">
+                      <input
+                        type="tel"
+                        id="telephone"
+                        placeholder="الرجاء ادخال رقم الجوال"
+                        class="inp-spe-tele"
+                      />
+                      <div class="icon-float">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3 main-inp-cont">
+                    <h6 class="fontBold mainColor font14 font600">
+                      البريد الالكترونى
+                    </h6>
+                    <div class="relative-co">
+                      <input
+                        type="text"
+                        placeholder="الرجاء ادخال البريد الالكترونى"
+                        class="inp-spe-tele"
+                      />
+                      <div class="icon-float">
+                        <i class="fa-solid fa-envelope"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3 main-inp-cont">
+                    <h6 class="font-bold">المدينة</h6>
+                    <div class="relative-co">
+                      <select name="" id="" class="main-select">
+                        <option value="" selected disabled>
+                          الرجاء اختيار المدينة
+                        </option>
+                        <option value="">الرياض</option>
+                        <option value="">بغداد</option>
+                        <option value="">الرياض</option>
+                      </select>
+                      <div class="icon-float">
+                        <i class="fa-solid fa-location-dot"></i>
+                      </div>
+                      <div class="icon-float2">
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3 main-inp-cont">
+                    <h6 class="fontBold mainColor font14 font600">اسم البنك</h6>
+                    <div class="relative-co">
+                      <input
+                        type="text"
+                        placeholder="الرجاء ادخال اسم البنك"
+                        class="inp-spe-tele"
+                      />
+                      <div class="icon-float">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3 main-inp-cont">
+                    <h6 class="fontBold mainColor font14 font600">
+                      رقم الحساب البنكي
+                    </h6>
+                    <div class="relative-co">
+                      <input
+                        type="number"
+                        placeholder="الرجاء ادخال رقم الحساب البنكي"
+                        class="inp-spe-tele"
+                      />
+                      <div class="icon-float">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3 main-inp-cont">
+                    <h6 class="fontBold mainColor font14 font600">
+                      رقم ال IBAN
+                    </h6>
+                    <div class="relative-co">
+                      <input
+                        type="number"
+                        placeholder="الرجاء ادخال رقم ال IBAN"
+                        class="inp-spe-tele"
+                      />
+                      <div class="icon-float">
+                        <i class="fa-solid fa-money-check"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3 main-inp-cont">
+                    <h6 class="font-bold">الجنسية</h6>
+                    <div class="relative-co">
+                      <select name="" id="" class="main-select">
+                        <option value="" selected disabled>
+                          الرجاء اختيار الجنسية
+                        </option>
+                        <option value="">مصري</option>
+                        <option value="">سعودي</option>
+                    
+                      </select>
+                      <div class="icon-float">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                      </div>
+                      <div class="icon-float2">
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                
+
+                  <div class="mt-4">
+                    <button class="main-btn up mb-2">تاكيد</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dont-have">
+                لديك حساب بالفعل؟ <a href="login.html">تسجيل دخول</a>
+              </div>
+
+              <div class="forget-login mb-4">
+                <a href="index.html" class="decore-me font14 color-main"
+                  >دخول كزائر</a
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="flag/build/js/intlTelInput.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!--call iti for phone number-->
+    <script>
+      var input = document.querySelector("#telephone");
+      window.intlTelInput(input, {
+        autoPlaceholder: "ادخل",
+        customPlaceholder: "kggg",
+        initialCountry: "sa",
+        // nationalMode:false,
+        separateDialCode: true,
+      });
+    </script>
+    <!--img profile-->
+    <script>
+      var loadFiles = function (event) {
+        var images = document.getElementById("change-profile");
+        images.src = URL.createObjectURL(event.target.files[0]);
+      };
+    </script>
+  </body>
+</html>
